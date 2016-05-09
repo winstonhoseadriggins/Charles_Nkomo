@@ -6,26 +6,21 @@ BODY
   box-sizing: border-box;
 }
 
-html, body {
-   margin: 0 auto;
-   padding: 0;
-   font-family: "Open Sans", sans-serif; 
-   background-color: gray;
-}
-
-
 body {
-  max-width: 100%;
-  margin: auto;
-padding: 0;
-width: 100%;
-max-width: 1550px;
-height: auto;
-
-
-  
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Open Sans", sans-serif; 
+    background-color: gray;;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;    
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 /*************************
@@ -34,183 +29,84 @@ height: auto;
  *************************/
 
 
- .first li{
-   display: flex;
-   flex-direction: column;
-    margin-top: 5px;
-    margin-bottom: 0;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1em;
+  a {
+     color: black;
+} 
+
+  a:visited {
+     color: black;
 }
 
-
-.first li:first-child {
-
-  margin-top:  40px;
+  a:hover {
+     color: orange;
 }
+
+/****************************
+Hamburger Menu
+******************************/
+
+
+
+
+/****************************
+End ofHamburger Menu
+******************************/
+
  
- .first li a {
+/********************
+Home
+**********************/
 
-  text-decoration: none;
-  list-style-type: none;
- }
 
-.first button {
-   border-radius: 5px;
-   border: 2px solid green;
-   background-color: #7C949C;
-   width: 110%;
-   
-
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; 
 
 }
 
- a {
-  color: black;
+.container {  
+    background-image: url("../img/NewCharlie2.jpg");
+    background-repeat:  no-repeat;   
+    height: calc(100vh - 50px);
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    border-bottom: 2px solid orange;
+    border-top: 2px solid orange;
+    margin-top: 0;             
 }
 
-a:visited {
-  color: black;
-}
-
-a:hover {
-  
-  color: orange;
-}
-
-
-  .container p {
-    font-size: .1em;
+#brand{
+    margin-top: 45px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #4b0082;
+    font-size: 1.4em;
+    font-family: 'Changa One', sans-serif; 
     font-weight: normal;
-    width: 40%;
-
-
-  }
-
-/*Hamburger Menu*/
-
-h1 {
-  text-align: center;
-  letter-spacing: 1px;
-  word-spacing: 0.15em;
-  font-size: 3em;
-  line-height: 1.2;
-  transform: translateY(52%);
+    text-shadow: 5px 5px 7px grey;
+  
 }
 
 
-#toggle {
-  display: none;
+/*************************
+ HOME-FOOTER
+**************************/
+
+.futer a {
+text-decoration: none;
+color: black;
+font-weight: bold;
+
 }
 
-/**
-  Hamburger
-**/
-.hamburger {
-  position: absolute;
-  top: 5em;
-  right: 5%;
-  margin-left: -2em;
-  margin-top: -45px;
-  width: 3em;
-  height: 45px;
-  z-index: 5;
-}
-
-.hamburger div {
-  position: relative;
-  width: 2.5em;
-  height: 7px;
-  border-radius: 3px;
-  background-color: #4b0082;
-  margin-top: 8px;
-  transition: all 0.3s ease-in-out;
-}
-
-/**
-Nav Styles
-**/
-.nav {
-  position: fixed;
-  width: 100%;
-  height: 50%;
-  background-color: transparent;
-  top: -100%; left: 0; right: 0; bottom: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  transform: scale(0);
-}
-.nav-wrapper {
-  position: relative;
-  overflow: hidden;
-  overflow-y: auto;
-  height: 100%;
-}
-
-nav {
-  text-align: left;
-  margin-left: 25%;
-}
-
-nav a {
-  position: relative;
-  text-decoration: none;
-  color: black;
-  font-size: 1em;
-  display: inline-block;
-  margin-top: .7em;
-  transition: color 0.2s ease-in-out;
-  letter-spacing: 1px;
-}
-
-nav a:before {
-  content: '';
-  height: 0;
-  position: absolute;
-  width: 0.25em;
-  background-color: white;
-  left: -0.5em;
-  transition: all 0.2s ease-in-out;
-}
-nav a:hover {
-  color: #f8982b;;
-}
-nav a:hover:before {
-  height: 100%;
-}
-
-/**
-Animations
-**/
-#toggle:checked + .hamburger .top-bun {
-  transform: rotate(-45deg);
-  margin-top: 25px;
-}
-#toggle:checked + .hamburger .bottom-bun {
-  opacity: 0;
-  transform: rotate(45deg);
-}
-#toggle:checked + .hamburger .meat {
-  transform: rotate(45deg);
-  margin-top: -7px;
-}
-
-#toggle:checked + .hamburger + .nav {
-  top: 0;
-  transform: scale(1);
-}
-
-
-/*Hamburger Menu*/
-
-
-.latest {
+.futer {
   background: white;
   height: 50px;
 }
 
-.latest p {
+.futer p {
   padding-top: 8px;
   font-size: .6em;
   display: inline-block;
@@ -234,106 +130,11 @@ h2 {
   color: #000000;
 }
 
-.footer {
+.futer {
    flex: 1;
 }
 
 
-#wrapper {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0; 
-
-}
-
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-
-
-}
-
-
- 
-/********************
-Home
-**********************/
-
-.tech{
-
-color: black;
-font-size: 1em;
-text-align: center;
-margin-top: 50px;
-font-style: italic;
-font-weight: bold;
-}
-
-.container {  
-
-
-    background-image: url("../Images/NewCharlie2.jpg");
-    
-    background-repeat:  no-repeat;
-    
-   /* height: 100vh;*/
-    height: calc(100vh - 50px);
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-   /* width: 100vw;*/
-    border-bottom: 2px solid orange;
-    border-top: 2px solid orange;
-    margin-top: 0;
-
-   
-             
-}
-
-
-
-
-#brand{
-    margin-top: 45px;
-    margin-left: 20px;
-    font-weight: bold;
-    color: #4b0082;
-    font-size: 1.4em;
-    font-family: 'Changa One', sans-serif; 
-    font-weight: normal;
-    text-shadow: 5px 5px 7px grey;
-  
-
-}
-
-
-
-.tech{
-  -webkit-animation-duration: 20s;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-iteration-count: infinite;
-}
-
-.tech {
-  -moz-animation-duration: 20s;
-  -moz-animation-delay: 1s;
-  -moz-animation-iteration-count: infinite;
-}
-
-
-
-/*************************
- HOME-FOOTER
-**************************/
-
-.footer a {
-text-decoration: none;
-color: black;
-font-weight: bold;
-
-}
 
 
 
@@ -342,7 +143,7 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 
 **********************************/
 #section {
-background-image: url("../images/aboutbackground.png");
+background-image: url("../img/aboutbackground.png");
 
 
 }
@@ -733,290 +534,5 @@ Remove Overlay Buttons Outline
 
 MEDIA QUIRIES
 ******************/
-
-@media screen and (min-width: 534px){ 
-
-   
-input[type="text"] {
-  
-    width: 460px;
-    height: 30px;
-    font-size: 16px;     
-}
-
-
- .lightbox img {
-   /*max-width: 100%;*/
-   border: 1px solid white;
-   transition-property: box-shadow;
-   transition-duration:  .4s;
-   margin-bottom: 30px;
-   margin-left: 30px;
-   float: left;
-
- }
-
-
-#overlay img {
-  width: 80%;
-  border: 2px solid  white;
-  margin-top: 22%;
-}
-
-
-#overlay p {
-color: white;
-width: 300px;
-margin: 0 auto;
-padding-top: 5px;
-
-
-}
-
- #overlay #btnClose{
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  font-size: 2em;
-   background-color: rgba(0,0,0,0.0);
-  color: grey;
-  border: none;
-}
-
-#overlay #btnPrev {
-
-  position: absolute;
-   float: left;
-   top: 35%;
-  left: 3%;
-  font-size: 2em;
-  background-color: rgba(0,0,0,0.0);
-  color: grey;
-  border: none;
-
-}
-
-#overlay #btnNext {
-
-  position: absolute;
-   float: right;
-   top: 35%;
-  right: 3%;
-  font-size: 2em;
-  background-color: rgba(0,0,0,0.0);
-  color: grey;
-  border: none;
-
-}
-
-
-}
-
-@media screen and (min-width: 765px){ 
-
-
-
-#overlay p {
-color: white;
-width: 600px;
-margin: 0 auto;
-padding-top: 15px;
-
-}
-
-#overlay img {
-  margin-top: 10%;
-  border: 2px solid white;
-  border-radius: 1%; 
-  width: 60%;
- 
-
-}
-
-
-#overlay #btnClose{
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  font-size: 2em;
-   background-color: rgba(0,0,0,0.0);
-  color: grey;
-  border: none;
-}
-
-#overlay #btnPrev {
-
-  position: absolute;
-   float: left;
-   top: 40%;
-  left: 10%;
-  font-size: 2em;
-  background-color: rgba(0,0,0,0.0);
-  color: grey;
-  border: none;
-
-}
-
-#overlay #btnNext {
-
-  position: absolute;
-  float: right;
-  top: 40%;
-  right: 10%;
-  font-size: 2em;
-  background-color: rgba(0,0,0,0.0);
-  color: grey;
-  border: none;
-
-}
-
-
-}
-
-@media screen and (min-width: 1100px) {
-
-#overlay p {
-color: white;
-width: 600px;
-margin: 0 auto;
-padding-top: 15px;
-
-}
-
-#overlay img {
-  margin-top: 15%;
-  border: 2px solid white;
-  border-radius: 1%; 
-  width: 40%;
- 
-
-}
-
-
-#overlay #btnClose{
-  position: absolute;
-  top: 10%;
-  right: 20%;
-  font-size: 2em;
-   background-color: rgba(0,0,0,0.0);
-  color: grey;
-  border: none;
-}
-
-#overlay #btnPrev {
-
-  position: absolute;
-  float: left;
-  top: 45%;
-  left: 20%;
-  font-size: 2em;
-  background-color: rgba(0,0,0,0.0);
-  color: grey;
-  border: none;
-
-}
-
-#overlay #btnNext {
-
-  position: absolute;
-  float: right;
-  top: 45%;
-  right: 20%;
-  font-size: 2em;
-  background-color: rgba(0,0,0,0.0);
-  color: grey;
-  border: none;
-
-}
-
-
-}
-
-
-
-/*************************************************
-
-MEDIA QUERIES min-widths -480px, 660px
-
-**************************************************/
-
-@media screen and (max-width: 322px) {
-
-.latest .right {
-  display: none;
-}
-
-}
-
-@media screen and (max-width: 767px) {
-  .secondNav {
-    display: none;
-  }
-
-  .quotation {
-    display: none;
-  }
-
- 
-}
-
-@media screen and (min-width: 768px) {
-
-.hamburger {
-  display: none;
-}
-
-.first li{
-  display: none;
-
-}
-
-.secondNav li {
-  display: inline-block;  
-  float: right;
-  margin-right: 20px;
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 1.2em;
-  color: purple;
-}
-
-.secondNav li a {
-  color: #4b0082;
-}
-
-.quotation {
-  margin-right: 30px;
-  width: 500px;
-  text-align: center;
-  margin-top: 10px;
-  float: right;
-
-
-}
-
-.quotation p{
-
-  font-size: 1em;
-  float: right;
-}
-
-
-
-}
-
-@media screen and (min-width: 800px) {
- 
-  .quotation p {
-    float: left;
-  }
-
-  .quotation {
-        margin-left: 40px;
-        margin-top: 100px;
-        float: left;
-  }
-
-}
 
 
