@@ -1,8 +1,9 @@
 /*****************
 BODY
 *****************/
-
-* {
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -28,14 +29,44 @@ body {
  
  *************************/
 
+.menu {
+  float: right;
+  margin-right: 40px;
+  font-weight: bold;
+  margin-top: 80px;
+  padding: 0;
 
-  a {
-     color: black;
+
 } 
 
-  a:visited {
-     color: black;
+.nav{
+ border: 0 auto;
+
 }
+
+
+
+}
+
+.menu li {
+  margin-top: 25px;
+   display: block;
+   padding:0;
+
+  
+}
+
+.menu  a {
+  text-decoration: none;
+  margin-top: 30;
+ 
+}
+
+  a {
+     color: white;
+} 
+
+
 
   a:hover {
      color: orange;
@@ -44,6 +75,51 @@ body {
 /****************************
 Hamburger Menu
 ******************************/
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+ 
+}
+
+nav {
+ 
+  background-color: #f5f5f5;
+}
+
+ul a {
+  display: block;
+  padding: 10px;
+  padding-right: 0 !important; /* important overrides media queries */
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+/*  color: #aaa;*/
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+nav li:last-child {
+  border-right: none;
+}
 
 
 
@@ -79,13 +155,16 @@ Home
 
 #brand{
     margin-top: 45px;
-    margin-left: 20px;
     font-weight: bold;
     color: #4b0082;
-    font-size: 1.4em;
+    font-size: 2em;
     font-family: 'Changa One', sans-serif; 
     font-weight: normal;
-    text-shadow: 5px 5px 7px grey;
+    text-shadow: 5px 8px 8px grey;
+    float: right;
+    position: relative;
+    left: 100px;
+    bottom: 88px;
   
 }
 
@@ -229,11 +308,26 @@ GALLERY
     content: "";
     display: table;
     clear: both;
+}
 
-
+.background {
+  background-color: #add8e6;
 }
 
 
+.galleryTitle{
+  color: #4b0082;
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+}
+
+.interactive {
+  color: black;
+  font-size: .8em;
+  margin-top: -30px;
+  text-align: center;
+}
 
 /*****************
 Search Field
@@ -535,4 +629,44 @@ Remove Overlay Buttons Outline
 MEDIA QUIRIES
 ******************/
 
+@media only screen and (max-width: 500px) {
+  
+  .hamburger {
+    padding: 15px;
+    display: block;
+  }
+
+  .line {
+    border-bottom: 4px solid #4b0082;;
+    width: 35px;
+    margin-bottom: 6px;
+  }
+  
+  .line:last-child {
+    margin-bottom: 0;
+  }
+
+  nav li {
+    width: 100%;
+  }
+  
+  .menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+  }
+
+  .navigator {
+    position: relative;
+    bottom: 120px;
+
+  }
+  
+  .slide-down {
+    height: 185px;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+
+}
 
