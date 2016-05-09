@@ -1,0 +1,1022 @@
+/*****************
+BODY
+*****************/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+   margin: 0 auto;
+   padding: 0;
+   font-family: "Open Sans", sans-serif; 
+   background-color: gray;
+}
+
+
+body {
+  max-width: 100%;
+  margin: auto;
+padding: 0;
+width: 100%;
+max-width: 1550px;
+height: auto;
+
+
+  
+}
+
+
+
+/*************************
+ HOME-NAVIGATOION
+ 
+ *************************/
+
+
+ .first li{
+   display: flex;
+   flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 0;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+.first li:first-child {
+
+  margin-top:  40px;
+}
+ 
+ .first li a {
+
+  text-decoration: none;
+  list-style-type: none;
+ }
+
+.first button {
+   border-radius: 5px;
+   border: 2px solid green;
+   background-color: #7C949C;
+   width: 110%;
+   
+
+
+}
+
+ a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  
+  color: orange;
+}
+
+
+  .container p {
+    font-size: .1em;
+    font-weight: normal;
+    width: 40%;
+
+
+  }
+
+/*Hamburger Menu*/
+
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 0.15em;
+  font-size: 3em;
+  line-height: 1.2;
+  transform: translateY(52%);
+}
+
+
+#toggle {
+  display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+  position: absolute;
+  top: 5em;
+  right: 5%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 3em;
+  height: 45px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  width: 2.5em;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #4b0082;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/**
+Nav Styles
+**/
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 50%;
+  background-color: transparent;
+  top: -100%; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+nav {
+  text-align: left;
+  margin-left: 25%;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  display: inline-block;
+  margin-top: .7em;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+
+nav a:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: white;
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+  color: #f8982b;;
+}
+nav a:hover:before {
+  height: 100%;
+}
+
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+
+/*Hamburger Menu*/
+
+
+.latest {
+  background: white;
+  height: 50px;
+}
+
+.latest p {
+  padding-top: 8px;
+  font-size: .6em;
+  display: inline-block;
+  font-weight: bold;
+  color: #4b0082;
+
+}
+
+.left {
+  float: left;
+  margin-left: 20px;
+}
+
+.right {
+  float: right;
+  margin-right: 20px;
+}
+
+h2 {
+
+  color: #000000;
+}
+
+.footer {
+   flex: 1;
+}
+
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; 
+
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+
+
+}
+
+
+ 
+/********************
+Home
+**********************/
+
+.tech{
+
+color: black;
+font-size: 1em;
+text-align: center;
+margin-top: 50px;
+font-style: italic;
+font-weight: bold;
+}
+
+.container {  
+
+
+    background-image: url("../Images/NewCharlie2.jpg");
+    
+    background-repeat:  no-repeat;
+    
+   /* height: 100vh;*/
+    height: calc(100vh - 50px);
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+   /* width: 100vw;*/
+    border-bottom: 2px solid orange;
+    border-top: 2px solid orange;
+    margin-top: 0;
+
+   
+             
+}
+
+
+
+
+#brand{
+    margin-top: 45px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #4b0082;
+    font-size: 1.4em;
+    font-family: 'Changa One', sans-serif; 
+    font-weight: normal;
+    text-shadow: 5px 5px 7px grey;
+  
+
+}
+
+
+
+.tech{
+  -webkit-animation-duration: 20s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.tech {
+  -moz-animation-duration: 20s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: infinite;
+}
+
+
+
+/*************************
+ HOME-FOOTER
+**************************/
+
+.footer a {
+text-decoration: none;
+color: black;
+font-weight: bold;
+
+}
+
+
+
+/*********************************
+ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
+
+**********************************/
+#section {
+background-image: url("../images/aboutbackground.png");
+
+
+}
+
+
+
+.artgallery img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 60px;
+  border-radius: 30px;
+
+}
+.artgallery {
+ /* background-image: url("../images/Navnew.jpg");*/
+  height: 100%;
+}
+
+}
+
+.span p {
+
+ text-align: center;
+
+}
+
+/***********************
+MULTI COLUMN
+************************/
+
+
+.bio:first-line {
+  font-weight: bold; 
+  font-size: 1em;
+} 
+
+.bio::first-letter {
+  float:left;
+  font-size: 1em;
+  color: orange;
+  padding:5px 10px;
+  background: #384047;
+  margin: 5px 10px 0 0;
+  border-radius:5px;
+  line-height: 1;
+  
+}
+
+.bio {
+  
+  margin-top: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+.bio p {
+  -webkit-column-count: 2;
+  margin-left: 50px;
+  margin-right: 20px;
+  font: 1em Tangerine;
+  -webkit-column-rule: 1px dotted;
+  -webkit-column-width: 250px;
+}
+
+.bio p {
+  -moz-column-count: 2;
+  margin-left: 50px;
+  margin-right: 20px;
+  font: 1em Tangerine;
+  -moz-column-rule: 1px dotted;
+  -moz-column-width: 250px;
+}
+
+/***************************************
+GALLERY
+****************************************/
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+
+
+}
+
+
+
+/*****************
+Search Field
+******************/
+
+.field{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width:100%;
+  height: 140px;
+  border-bottom: 1px solid orange;
+}
+
+
+.head h3{
+  color: orange;
+}
+
+
+input[type="text"] {
+  
+  
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-bottom: 22px;
+   /* margin-left: 50px;*/
+    padding: 15px;
+  
+}
+
+input {
+
+   border: solid 3px grey;
+   transition: border-color .6s;
+   transition-property: border-color, background-color, border-radius;
+
+}
+
+ input:hover {
+    border-color: green;
+    background-color: #add8e6;
+    border-radius: 20px;
+
+ }
+
+input:focus {
+  outline: none;
+}
+
+/**********************************
+SOCIAL MEDIA ICONS
+***********************************/
+
+.social {
+  padding: 0;
+}
+
+a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    opacity: .8;
+    transition: all .5s;
+    text-decoration: none;
+    padding: 11px;
+
+  }
+
+ul {
+  list-style: none;
+
+}
+
+.social li {
+  display: inline-block;
+  position: relative;
+  bottom: 35px;
+  padding: 10px;
+
+}
+
+
+.social li:hover {
+  transform: rotate(-40deg);
+
+}
+
+a.twitter {
+  background-image: url(../imgs/twitter.svg);
+}
+a.linkedin {
+  background-image: url(../imgs/linkedin.svg);
+}
+a.github {
+  background-image: url(../imgs/github.svg);
+}
+a.social:hover {
+  opacity: .5;
+}
+
+
+/****************
+Gallery
+******************/
+
+.gallery {
+  max-width: 100%;
+  margin-top: 180px;
+}
+
+
+.lightbox  {
+  list-style: none;
+  max-width: 980px;
+  padding: 10px;
+  margin: 0 auto;
+  
+}
+
+img {
+    transition: transform .5s;
+    width: 90%;
+    height: 100%;
+}
+
+img:hover {
+transform:skewY(1.5deg);
+
+}
+
+ .lightbox img {
+   max-width: 100%;
+   border: 2px solid white;
+   transition-property: box-shadow;
+   transition-duration:  .4s;
+   margin-bottom: 30px;
+
+ }
+  
+
+img:hover {
+  
+  box-shadow: 0 0 15px rgba(0,0, 0, .7);
+ 
+
+}
+
+
+/********************
+FOOTER
+********************/
+
+.top {
+  font-size: .6em;
+  font-weight: bold;
+  color: black;
+}
+
+.top:hover {
+  color: orange;
+}
+
+.copy{
+  clear: both;
+  font-weight: bold;
+  color: black;
+  font-size: .8em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.copy a {
+  text-decoration: none;
+  color: orange;
+}
+
+
+
+
+/***********************
+Overlay
+************************/
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: rgba(0,0,0,0.80);
+    display: none;
+    z-index: 2;
+  
+}
+
+
+#overlay img {
+  max-height: 50vh;
+  max-width: 80%;
+  border: 2px solid  white;
+  margin-top: 20%;
+}
+
+#overlay p {
+color: white;
+width: 300px;
+margin: 0 auto;
+padding-top: 5px;
+
+}
+
+
+#overlay #btnClose{
+  position: absolute;
+  top: 4%;
+  right: 15%;
+  font-size: 1em;
+   background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+#overlay #btnPrev {
+
+  position: absolute;
+   float: left;
+   top: 25%;
+  left: 3%;
+  font-size: 1.5em;
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+  font-weight: bold;
+
+}
+
+#overlay #btnNext {
+
+  position: absolute;
+   float: right;
+   top: 25%;
+  right: 3%;
+  font-size: 1.5em;
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+  font-weight: bold;
+
+}
+
+
+
+/***************************
+Add Overlay buttons Hover
+****************************/
+
+#overlay #btnClose:hover{
+  color: white;
+}
+
+#overlay #btnNext:hover{
+  color: white;
+}
+
+#overlay #btnPrev:hover{
+  color: white;
+}
+
+/****************************
+Remove Overlay Buttons Outline
+*****************************/
+
+#overlay #btnNext:focus {
+  outline:none;
+}
+
+#overlay #btnPrev:focus {
+  outline:none;
+}
+
+#overlay #btnClose:focus {
+  outline:none;
+}
+
+
+/*******************
+
+MEDIA QUIRIES
+******************/
+
+@media screen and (min-width: 534px){ 
+
+   
+input[type="text"] {
+  
+    width: 460px;
+    height: 30px;
+    font-size: 16px;     
+}
+
+
+ .lightbox img {
+   /*max-width: 100%;*/
+   border: 1px solid white;
+   transition-property: box-shadow;
+   transition-duration:  .4s;
+   margin-bottom: 30px;
+   margin-left: 30px;
+   float: left;
+
+ }
+
+
+#overlay img {
+  width: 80%;
+  border: 2px solid  white;
+  margin-top: 22%;
+}
+
+
+#overlay p {
+color: white;
+width: 300px;
+margin: 0 auto;
+padding-top: 5px;
+
+
+}
+
+ #overlay #btnClose{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 2em;
+   background-color: rgba(0,0,0,0.0);
+  color: grey;
+  border: none;
+}
+
+#overlay #btnPrev {
+
+  position: absolute;
+   float: left;
+   top: 35%;
+  left: 3%;
+  font-size: 2em;
+  background-color: rgba(0,0,0,0.0);
+  color: grey;
+  border: none;
+
+}
+
+#overlay #btnNext {
+
+  position: absolute;
+   float: right;
+   top: 35%;
+  right: 3%;
+  font-size: 2em;
+  background-color: rgba(0,0,0,0.0);
+  color: grey;
+  border: none;
+
+}
+
+
+}
+
+@media screen and (min-width: 765px){ 
+
+
+
+#overlay p {
+color: white;
+width: 600px;
+margin: 0 auto;
+padding-top: 15px;
+
+}
+
+#overlay img {
+  margin-top: 10%;
+  border: 2px solid white;
+  border-radius: 1%; 
+  width: 60%;
+ 
+
+}
+
+
+#overlay #btnClose{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 2em;
+   background-color: rgba(0,0,0,0.0);
+  color: grey;
+  border: none;
+}
+
+#overlay #btnPrev {
+
+  position: absolute;
+   float: left;
+   top: 40%;
+  left: 10%;
+  font-size: 2em;
+  background-color: rgba(0,0,0,0.0);
+  color: grey;
+  border: none;
+
+}
+
+#overlay #btnNext {
+
+  position: absolute;
+  float: right;
+  top: 40%;
+  right: 10%;
+  font-size: 2em;
+  background-color: rgba(0,0,0,0.0);
+  color: grey;
+  border: none;
+
+}
+
+
+}
+
+@media screen and (min-width: 1100px) {
+
+#overlay p {
+color: white;
+width: 600px;
+margin: 0 auto;
+padding-top: 15px;
+
+}
+
+#overlay img {
+  margin-top: 15%;
+  border: 2px solid white;
+  border-radius: 1%; 
+  width: 40%;
+ 
+
+}
+
+
+#overlay #btnClose{
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  font-size: 2em;
+   background-color: rgba(0,0,0,0.0);
+  color: grey;
+  border: none;
+}
+
+#overlay #btnPrev {
+
+  position: absolute;
+  float: left;
+  top: 45%;
+  left: 20%;
+  font-size: 2em;
+  background-color: rgba(0,0,0,0.0);
+  color: grey;
+  border: none;
+
+}
+
+#overlay #btnNext {
+
+  position: absolute;
+  float: right;
+  top: 45%;
+  right: 20%;
+  font-size: 2em;
+  background-color: rgba(0,0,0,0.0);
+  color: grey;
+  border: none;
+
+}
+
+
+}
+
+
+
+/*************************************************
+
+MEDIA QUERIES min-widths -480px, 660px
+
+**************************************************/
+
+@media screen and (max-width: 322px) {
+
+.latest .right {
+  display: none;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+  .secondNav {
+    display: none;
+  }
+
+  .quotation {
+    display: none;
+  }
+
+ 
+}
+
+@media screen and (min-width: 768px) {
+
+.hamburger {
+  display: none;
+}
+
+.first li{
+  display: none;
+
+}
+
+.secondNav li {
+  display: inline-block;  
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: purple;
+}
+
+.secondNav li a {
+  color: #4b0082;
+}
+
+.quotation {
+  margin-right: 30px;
+  width: 500px;
+  text-align: center;
+  margin-top: 10px;
+  float: right;
+
+
+}
+
+.quotation p{
+
+  font-size: 1em;
+  float: right;
+}
+
+
+
+}
+
+@media screen and (min-width: 800px) {
+ 
+  .quotation p {
+    float: left;
+  }
+
+  .quotation {
+        margin-left: 40px;
+        margin-top: 100px;
+        float: left;
+  }
+
+}
+
+

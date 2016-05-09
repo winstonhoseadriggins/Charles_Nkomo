@@ -1,0 +1,388 @@
+@media (max-width: 640px) {
+  .photo {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 748px) {
+  .container p {
+    display: none;
+  }
+
+  .tech {
+   
+   font-size: .8em;
+
+  }
+}
+
+@media (min-width: 721px) {
+
+.container h2{
+
+  font-size: 2em;
+
+ margin-top: 50px;
+
+}
+
+.first li {
+
+  display: inline-block;
+
+}
+
+.first button {
+  width: 100px;
+}
+
+.second button {
+  width: 50px;
+
+
+}
+.container ul li {
+  
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+
+
+.second {
+  float: right;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+/*.second ul {
+  width: 100px;
+}*/
+
+.first {
+  display: inline-block;
+}
+
+.first ul {
+  width: 50px;
+}
+
+
+}
+
+@media (min-width: 753px) {
+
+  
+   /*************************
+    TRANSITION
+   **************************/
+
+   .first li {
+    width: 100px;
+    height: 50px;
+   /* background: red;*/
+   /* color: white;*/
+    font-weight: bold;
+   -webkit-transition: width 0.5s; /* Safari */
+    transition: width 0.5s;
+    display: inline-block;
+}
+
+/* For Safari 3.1 to 6.0 */
+.first li {-webkit-transition-timing-function: cubic-bezier(0,0,1,1);}
+.first li{-webkit-transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
+.first li {-webkit-transition-timing-function: cubic-bezier(0.42,0,1,1);}
+.first  li{-webkit-transition-timing-function: cubic-bezier(0,0,0.58,1);}
+.first  li {-webkit-transition-timing-function: cubic-bezier(0.42,0,0.58,1);}
+
+/* Standard syntax */
+.first li {transition-timing-function: cubic-bezier(0,0,1,1);}
+.first li {transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
+.first li {transition-timing-function: cubic-bezier(0.42,0,1,1);}
+.first li {transition-timing-function: cubic-bezier(0,0,0.58,1);}
+.first li {transition-timing-function: cubic-bezier(0.42,0,0.58,1);}
+
+.first li:hover {
+    width: 110px;
+}
+
+/*********************
+END TRANSITION
+**********************/
+
+  .first  button {
+      background-color: #7C949C;
+      width: 120%;
+
+
+}
+
+.container ul li {
+  
+  margin-left: 20px;
+}
+
+
+  .container h2 {
+    color: black;
+    font-size: 3em; 
+   /* float: right;*/
+    margin-left: 40px;
+    margin-top: 5px;
+    float: left;
+    clear: both;
+   
+
+  }
+
+  .container p {
+    margin-top: 0;
+    font-size: .8em;
+    margin-left: 10px;
+    position: relative;
+    top: 100px;
+    color: black;
+
+
+  }
+  
+
+ .first {
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+  }
+
+  .first li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 0;
+    padding-bottom: 1px;
+
+   
+  }
+
+ .second {
+    float: right;
+  }
+
+  .second li{
+
+  width: 30px;
+ }
+
+  .second li {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-right: 40px; 
+    }
+
+
+   .credit {
+    float: left;
+     margin-left: 90px;
+   }
+
+    .baobab3 img {
+    float: left;
+    position: relative;
+    top: 100px;
+    margin-left: 100px;
+    border-radius: 1px;
+
+   }
+
+   .baobab1 img{
+ 
+    float: right;
+    margin-right: 100px;
+    border-radius: 1px;
+    margin-left: 20px;
+    border-top: -50px;
+   }
+
+   .photo {
+      float: right;
+     
+      margin-right: 50px;
+   
+      
+   }
+
+   .credit,
+   .photo {
+      font-size: .8em;
+      padding-top: 30px;
+   }
+}
+
+.footer {
+
+  clear: both;
+  border-bottom: 10px solid green;
+}
+@media (min-width: 401px) {
+
+.container {  
+    background-image: url("../images/charlesCropped.jpg"); 
+   height: 425px;
+   max-width: 100%;
+   
+        
+}
+
+}
+
+
+@media (max-width: 520px) {
+  .photo {
+    display: none;
+  }
+
+}
+
+@media (min-width: 520px) {
+
+.container {  
+   /* background-image: url("../images/charles3.jpg"); */
+   height: 550px;
+   max-width: 100%;
+   
+       
+}
+
+
+
+}
+
+
+
+
+@media (max-width: 719px) {
+  .container p {
+    display: none;
+  }
+
+  .tech {
+   
+   font-size: .8em;
+
+  }
+}
+
+@media (min-width: 719px) {
+
+  
+  .first  button {
+      background-color: #7C949C;
+      width: 120%;
+
+
+}
+
+.nav ul li {
+  
+  margin-left: 30px;
+}
+
+.container {
+  height: 840px;
+  max-width: 100%;
+}
+
+  .container h2 {
+    color: black;
+    font-size: 3em; 
+    float: right;
+    margin-right: 40px;
+   
+
+  }
+
+  .container p {
+    margin-top: 0;
+    font-size: .7em;
+    margin-left: 50px;
+    position: relative;
+    top: 150px;
+
+
+  }
+  
+
+ .first {
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+  }
+
+  .first li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 0;
+    padding-bottom: 1px;
+
+   
+  }
+
+ .second {
+    float: right;
+  }
+
+  .second li {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-right: 40px; 
+    }
+
+
+   .credit {
+    float: left;
+     margin-left: 90px;
+   }
+
+    .baobab3 img {
+    float: left;
+    position: relative;
+    top: 100px;
+    margin-left: 100px;
+    border-radius: 1px;
+
+   }
+
+   .baobab1 img{
+ 
+    float: right;
+    margin-right: 100px;
+    border-radius: 1px;
+    margin-left: 20px;
+    border-top: -50px;
+   }
+
+   .photo {
+      float: right;
+     
+      margin-right: 50px;
+   
+      
+   }
+
+   .credit,
+   .photo {
+      font-size: .8em;
+      padding-top: 30px;
+   }
+}
+
+.footer {
+
+  clear: both;
+  border-bottom: 10px solid green;
+}
+
+
