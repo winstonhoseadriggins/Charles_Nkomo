@@ -21,7 +21,7 @@ body {
     content: "";
     display: table;
     clear: both;
-}
+} 
 
 
 /*************************
@@ -67,6 +67,9 @@ body {
 } 
 
 
+  menu a:hover {
+    color: brown;
+  }
 
   a:hover {
      color: orange;
@@ -87,10 +90,7 @@ html, body {
   height: 100%;
 }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
 
 ul {
   list-style: none;
@@ -132,6 +132,10 @@ End ofHamburger Menu
 /********************
 Home
 **********************/
+
+.quotation {
+    font-family: 'kalam', sans-serif; /*Exceprt*/
+  }
 
 
 #wrapper {
@@ -175,19 +179,19 @@ Home
 
 .futer a {
 text-decoration: none;
-color: black;
+color: #4b0082;
 font-weight: bold;
 
 }
 
 .futer {
-  background: white;
+  background: #f0f8ff;
   height: 50px;
 }
 
 .futer p {
-  padding-top: 8px;
-  font-size: .6em;
+  padding-top: 15px;
+  font-size: .7em;
   display: inline-block;
   font-weight: bold;
   color: #4b0082;
@@ -329,9 +333,6 @@ GALLERY
   text-align: center;
 }
 
-/*****************
-Search Field
-******************/
 
 .field{
   background-color: white;
@@ -341,47 +342,14 @@ Search Field
   width:100%;
   height: 140px;
   border-bottom: 1px solid orange;
+  background-color: #f0f8ff;
+}
+
+.nav2 {
+  background-color: #f0f8ff;
 }
 
 
-.head h3{
-  color: orange;
-}
-
-
-input[type="text"] {
-  
-  
-    width: 200px;
-    height: 30px;
-    font-size: 16px;
-    background-color: white;
-    border-radius: 4px;
-    margin-top: 3px;
-    margin-bottom: 22px;
-   /* margin-left: 50px;*/
-    padding: 15px;
-  
-}
-
-input {
-
-   border: solid 3px grey;
-   transition: border-color .6s;
-   transition-property: border-color, background-color, border-radius;
-
-}
-
- input:hover {
-    border-color: green;
-    background-color: #add8e6;
-    border-radius: 20px;
-
- }
-
-input:focus {
-  outline: none;
-}
 
 /**********************************
 SOCIAL MEDIA ICONS
@@ -488,29 +456,6 @@ img:hover {
 FOOTER
 ********************/
 
-.top {
-  font-size: .6em;
-  font-weight: bold;
-  color: black;
-}
-
-.top:hover {
-  color: orange;
-}
-
-.copy{
-  clear: both;
-  font-weight: bold;
-  color: black;
-  font-size: .8em;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.copy a {
-  text-decoration: none;
-  color: orange;
-}
 
 
 
@@ -629,6 +574,17 @@ Remove Overlay Buttons Outline
 MEDIA QUIRIES
 ******************/
 
+@media screen and (max-width: 400px) {
+
+  .futer .right {
+    display: none;  
+  }
+ #brand {
+  font-size: 1.5em;
+ } 
+ 
+}
+
 @media only screen and (max-width: 600px){
   .quotation {
     display: none;
@@ -667,6 +623,8 @@ MEDIA QUIRIES
    
   #brand2 {
     display: none;
+    font-family: 'Oswald', sans-serif;
+
   }
 
 
@@ -693,9 +651,8 @@ MEDIA QUIRIES
   .navigator {
     position: relative;
     bottom: 120px;
-
   }
-  
+ 
   .slide-down {
     height: 185px;
     background-color: rgba(0,0,0,0.4);
@@ -712,10 +669,11 @@ MEDIA QUIRIES
     float: left;
     padding: 0;
     margin-top: -50px;
-    margin-left: 30px;
-    font-size: 1.6em;
+    margin-left: 50px;
+    font-size: 2.5em;
     font-weight: bold;
     color: #4b0082;
+    font-family: 'Oswald'
 
   }
 
@@ -750,12 +708,44 @@ MEDIA QUIRIES
 
  .menu li:hover {
     transform: scale(1.2);
+
  }
 
  .menu a {
   color: #4b0082;
   font-size: 1.3em
  }
+
+ /*******************
+ 
+ Gallery
+
+ ********************/
+
+.navigator li {
+
+  font-size: .6em;
+  margin-right: 2px;
+  padding-right: 2px;
+  
+}
+
+.galleryTitle{
+  float: left;
+  margin-left: 20px;
+  margin-top: 35px;
+
+}
+
+.nav2 {
+  height: 80px;
+  background-color: white;
+}
+
+.field {
+  background-color: red;
+  height: 80px;
+}
 
 }
 
