@@ -231,6 +231,7 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 #aboutsection {
       
    background-image: url("../img/aboutbackground.png");
+    border-bottom: 20px solid #4b0082;
      
 }
 
@@ -319,7 +320,7 @@ GALLERY
 ****************************************/
 
 .background {
-  border-bottom: 40px solid #4b0082;
+  border-bottom: 20px solid #4b0082;
   height: auto;
   
   }
@@ -372,7 +373,7 @@ GALLERY
 
 .nav3 {
   background-color: #f0f8ff;
-  height: 70px;
+  height: 80px;
   
 }
 
