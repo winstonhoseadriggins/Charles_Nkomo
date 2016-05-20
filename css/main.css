@@ -228,11 +228,10 @@ h2 {
 ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 
 **********************************/
-#section {
-      background-image: url("../img/aboutbackground.png");
-    /*  margin-top: 0;
-      background-color: yellow;
-      height: 800px;*/
+#aboutsection {
+      
+   background-image: url("../img/aboutbackground.png");
+     
 }
 
 
@@ -249,9 +248,9 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
   height: 100%;
   margin-top: 81px;
   padding: 20px;
-  background-color: red;
   margin-bottom: 0;
   overflow: hidden;
+
 }
 
 }
@@ -290,10 +289,9 @@ MULTI COLUMN
 
 .bio {
   
-
-  background-color: green;
   margin-top: 0;
-
+  
+  height: auto;
 
 }
 
@@ -852,7 +850,10 @@ Gallery
 
 }
 
-/***About***/
+/***************************
+
+About
+****************************/
 
 .about {
   z-index: 0;
@@ -861,20 +862,45 @@ Gallery
 .artgallery {
   float: left;
   width: 50%;
+  height: 600px;
 
 }
 
+.artgallery img {
+   
+   width: 100%;
+   margin-top: 150px;
+}
+
+.artgallery a {
+  text-decoration: none;
+}
+
+.artgallery p {
+  text-align: center;
+   margin-top: 20px;
+}
+
+.artgallery p:hover {
+  color: orange;
+}
+
+
+
 .para{
   margin-top: 200px;
-  
+ 
 }
 
 .bio {
   float: right;
   width: 50%;
   margin-top: 0;
+ 
+
 
 }
+
 
 }
 
