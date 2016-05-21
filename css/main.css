@@ -25,6 +25,53 @@ body {
 
 
 /*************************
+ANIMATE.CSS
+ 
+ *************************/
+
+
+.quote{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+}
+
+.quote {
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: 1;
+}
+
+.interactive{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+  
+}
+
+.interactive {
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: 1;
+
+}
+
+.capital{
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+  
+}
+
+.capital {
+  -moz-animation-duration: 2s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: 1;
+
+}
+
+
+/*************************
  HOME-NAVIGATOION
  
  *************************/
@@ -138,6 +185,7 @@ Home
 
 .quotation {
     font-family: 'kalam', sans-serif; /*Exceprt*/
+    color: #000;
   }
 
 
@@ -231,7 +279,7 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 #aboutsection {
       
    background-image: url("../img/aboutbackground.png");
-    border-bottom: 20px solid #4b0082;
+   
      
 }
 
@@ -278,7 +326,7 @@ MULTI COLUMN
 
 .bio::first-letter {
   float:left;
-  font-size: 1em;
+  font-size: 1.5em;
   color: orange;
   padding:5px 10px;
   background: #384047;
@@ -288,11 +336,16 @@ MULTI COLUMN
   
 }
 
+
+
+
 .bio {
   
   margin-top: 0;
-  
   height: auto;
+ 
+  margin: 10px;
+  border-radius: 5%;
 
 }
 
@@ -347,11 +400,12 @@ GALLERY
 
 
 .interactive {
-  color: black;
+  color: #4b0082;
   font-size: .8em;
   text-align: center;
   margin-top: -40px;
   margin-bottom: 10px;
+  font-weight: bold;
 
 }
 
@@ -863,7 +917,8 @@ About
 .artgallery {
   float: left;
   width: 50%;
-  height: 600px;
+
+
 
 }
 
@@ -871,6 +926,8 @@ About
    
    width: 100%;
    margin-top: 150px;
+
+
 }
 
 .artgallery a {
@@ -888,17 +945,24 @@ About
 
 
 
-.para{
-  margin-top: 200px;
+.para {
+  margin-top: 100px;
  
 }
 
+
+
 .bio {
   float: right;
-  width: 50%;
-  margin-top: 0;
+  width: 45%;
+  margin-top: 80px;
  
 
+}
+
+
+.two{
+  margin-bottom: 50px;
 
 }
 
