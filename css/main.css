@@ -224,6 +224,20 @@ Home
 }
 
 
+ #brand2 {
+    float: left;
+    padding: 0;
+    margin-top: -60px;
+    margin-left: 50px;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #4b0082;
+    font-family: 'Oswald';
+    text-shadow: 5px 8px 8px grey;
+
+  }
+
+
 /*************************
  HOME-FOOTER
 **************************/
@@ -276,21 +290,25 @@ h2 {
 ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 
 **********************************/
-#aboutsection {
-      
-   background-image: url("../img/aboutbackground.png");
-   
-     
+#aboutsection {      
+  background-image: url("../img/aboutbackground.png");    
 }
 
-
+.happy {
+  color: brown;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-size: 1em;
+  font-family: 'kalam', sans-serif; 
+}
 
 .artgallery img {
-  width: 50%;
+  width: 100%;
   display: block;
   margin: auto;
   border-radius: 30px;
-   margin-top: 50px;
+  margin-top: 20px;
 }
 
 .artgallery {
@@ -302,17 +320,39 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 
 }
 
-}
-.span {
-  background-color: black;
+.galleryname a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.span p {
-
- text-align: center;
-  background-color: black;
-
+.galleryname a:hover {
+  color: brown;
 }
+
+.galleryname {
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+
+.bio {
+  border: 1px solid white;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.para {
+  padding: 20px;
+}
+
+.bio .contacts {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
 
 /***********************
 MULTI COLUMN
@@ -726,8 +766,8 @@ Gallery
 .lightbox img {
    width: 85%;
    height: 200px;
-
 }
+
 
 
 .nature {
@@ -747,9 +787,6 @@ Gallery
 
 
 
-
-
-
 @media only screen and (max-width: 764px) {
 
  
@@ -763,6 +800,10 @@ Gallery
     font-family: 'Oswald', sans-serif;
 
 
+  }
+
+  .quotation {
+    display: none;
   }
 
 
@@ -802,21 +843,6 @@ Gallery
 
 @media screen and (min-width: 765px) {
    
-
-
-  #brand2 {
-    float: left;
-    padding: 0;
-    margin-top: -50px;
-    margin-left: 50px;
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #4b0082;
-    font-family: 'Oswald';
-    text-shadow: 5px 8px 8px grey;
-
-  }
-
    .quotation {
     float: right;
     margin-top: 50px;
@@ -873,9 +899,9 @@ Gallery
 .galleryTitle{
   float: left;
   margin-left: 50px;
-  margin-top: 55px;
+  margin-top: 65px;
   color: #4b0082;
-  font-size: 2.5em;
+  font-size: 2em;
 
 }
 
@@ -905,6 +931,9 @@ Gallery
 
 }
 
+
+
+
 /***************************
 
 About
@@ -930,27 +959,6 @@ About
 
 }
 
-.artgallery a {
-  text-decoration: none;
-}
-
-.artgallery p {
-  text-align: center;
-   margin-top: 20px;
-}
-
-.artgallery p:hover {
-  color: orange;
-}
-
-
-
-.para {
-  margin-top: 100px;
- 
-}
-
-
 
 .bio {
   float: right;
@@ -960,21 +968,18 @@ About
 
 }
 
-
+/*
 .two{
   margin-bottom: 50px;
 
-}
+}*/
 
 
 }
 
 @media screen and (min-width: 867px) {
-  #brand2 {
-   
-    margin-top: 25px;
+ 
 
-  }
 
     .quotation {
     float: right;
@@ -985,15 +990,18 @@ About
     font-size: 1em;
 }
 
+}
 
 
 
 
+@media screen and (min-width: 902px) {
 
 
-
-
-
+  #brand2 {
+   margin-top: 20px;
+  }
+}
 
 
 
