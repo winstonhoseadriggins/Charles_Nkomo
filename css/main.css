@@ -600,6 +600,12 @@ EXHIBITIONS
   font-size: .9em;
 }
 
+.fav {
+  color: brown;
+  font-size: .8em;
+  text-align: center;
+  font-family: 'Kalam', sans-serif;
+}
 /***********************
 Overlay
 ************************/
