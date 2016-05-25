@@ -589,12 +589,16 @@ a.social:hover {
 
 
 /********************
-FOOTER
+EXHIBITIONS
 ********************/
+.img2 {
+  width: 80%;
+   height: 10%;
+}
 
-
-
-
+.bio2 {
+  font-size: .9em;
+}
 
 /***********************
 Overlay
@@ -842,6 +846,8 @@ Gallery
 
 
 @media screen and (min-width: 765px) {
+
+
    
    .quotation {
     float: right;
@@ -934,6 +940,8 @@ Gallery
 
 
 
+
+
 /***************************
 
 About
@@ -946,15 +954,17 @@ About
 .artgallery {
   float: left;
   width: 50%;
-
-
-
 }
+
+.happy {
+  margin-top: 50px;
+}
+
 
 .artgallery img {
    
    width: 100%;
-   margin-top: 150px;
+   margin-top: 50px;
 
 
 }
@@ -963,19 +973,39 @@ About
 .bio {
   float: right;
   width: 45%;
-  margin-top: 80px;
- 
+  margin-top: 150px;
+  margin-right: 20px;
 
 }
 
-/*
-.two{
-  margin-bottom: 50px;
+/***************************
 
-}*/
+EXHIBITIONS
+****************************/
+
+
+.red{  
+  /*  background-image: url("../img/NewCharlie2.jpg");
+    background-repeat:  no-repeat;   
+    height: 40%;
+    background-size: cover; */
+    float: right;
+    width: 40%; 
+    background-color: red;            
+}
+
+.green{
+
+ width: 40%;
+ float: left;
+ background-color: green;  
+
+}
 
 
 }
+
+
 
 @media screen and (min-width: 867px) {
  
@@ -990,6 +1020,26 @@ About
     font-size: 1em;
 }
 
+.red{  
+  /*  background-image: url("../img/NewCharlie2.jpg");
+    background-repeat:  no-repeat;   
+    height: 40%;
+    background-size: cover; */
+    float: right;
+    width: 40%; 
+    background-color: red;            
+}
+
+.green{
+
+ width: 40%;
+ float: left;
+ background-color: green;  
+
+}
+
+
+
 }
 
 
@@ -1001,9 +1051,48 @@ About
   #brand2 {
    margin-top: 20px;
   }
+.red{  
+  /*  background-image: url("../img/NewCharlie2.jpg");
+    background-repeat:  no-repeat;   
+    height: 40%;
+    background-size: cover; */
+    float: right;
+    width: 40%; 
+    background-color: red;            
+}
+
+.green{
+
+ width: 40%;
+ float: left;
+ background-color: green;  
+
+}
+
 }
 
 
+@media screen and (min-width: 1178px) {
+
+.red{  
+  /*  background-image: url("../img/NewCharlie2.jpg");
+    background-repeat:  no-repeat;   
+    height: 40%;
+    background-size: cover; */
+    float: right;
+    width: 40%; 
+    background-color: red;            
+}
+
+.green{
+
+ width: 40%;
+ float: left;
+ background-color: green;  
+
+}
+
+}
 
 
 
