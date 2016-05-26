@@ -126,10 +126,6 @@ ANIMATE.CSS
 Hamburger Menu
 ******************************/
 
-.ham {
-  margin-top: 2px;
-}
-
 .clearfix:after {
   content: "";
   display: table;
@@ -161,7 +157,6 @@ ul a {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
-/*  color: #aaa;*/
   cursor: pointer;
   text-decoration: none;
 }
@@ -291,7 +286,7 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 
 **********************************/
 #aboutsection {      
-  background-image: url("../img/aboutbackground.png");    
+  background-image: url("../img/aboutbackground.png"); 
 }
 
 .happy {
@@ -337,27 +332,20 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 }
 
 .bio {
-  border: 1px solid white;
-  margin: 0 auto;
-  padding-bottom: 20px;
+ 
 }
 
-.para {
-  padding: 20px;
+.bio p {
+  padding: 10px;
+
 }
 
-.bio .contacts {
+
+.contact {
   font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 1.2em;
+  margin-left: 10px;
+
 }
-
-
-/***********************
-MULTI COLUMN
-************************/
-
 
 .bio:first-line {
   font-weight: bold; 
@@ -366,9 +354,9 @@ MULTI COLUMN
 
 .bio::first-letter {
   float:left;
-  font-size: 1.5em;
+  font-size: 1.1em;
   color: orange;
-  padding:5px 10px;
+  padding: 5px 8px;
   background: #384047;
   margin: 5px 10px 0 0;
   border-radius:5px;
@@ -376,36 +364,27 @@ MULTI COLUMN
   
 }
 
-
-
-
-.bio {
-  
-  margin-top: 0;
+.bio { 
   height: auto;
- 
   margin: 10px;
   border-radius: 5%;
+  border: 1px solid white;
+  padding-bottom: 20px;
+  font-size: 1em;
 
 }
 
 .bio p {
-
- /* -webkit-column-count: 2;*/
   margin-left: 50px;
   margin-right: 20px;
   font: 1em Tangerine;
- /* -webkit-column-rule: 1px dotted;
-  -webkit-column-width: 250px;*/
 }
 
 .bio p {
- /* -moz-column-count: 2;*/
   margin-left: 50px;
   margin-right: 20px;
   font: 1em Tangerine;
- /* -moz-column-rule: 1px dotted;
-  -moz-column-width: 250px;*/
+
 }
 
 /***************************************
@@ -427,16 +406,6 @@ GALLERY
 .background {
   background-color: #add8e6;
 }
-
-
-.galleryTitle{
-  color: #4b0082;
-  text-align: center;
-  position: relative;
-  bottom: 40px;
-  font-size: 1.2em;
-}
-
 
 .interactive {
   color: #4b0082;
@@ -461,16 +430,7 @@ GALLERY
   top: 0;
   z-index: 1;
   width:100%;
-/*  height: px;*/
 }
-
-.nav3 {
-  background-color: #f0f8ff;
-  height: 80px;
-  
-}
-
-
 
 .nature {
   margin-left: 40px;
@@ -514,9 +474,7 @@ transform:skewY(1.5deg);
 
  .lightbox li {
     margin-top: 50px;
-   /* width: 70%;
-    height: 70%;*/
-      border-radius: 10px;
+    border-radius: 10px;
     background-color: rgba(0,0,0,0.1);     
 }
   
@@ -534,56 +492,200 @@ img:hover {
 SOCIAL MEDIA ICONS
 ***********************************/
 
-.social {
-  padding: 0;
+/*** div ***/
+/*.social {
+  padding: 10px;
+  text-align: center;
+} 
+
+
+.social li {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 100%;
+  margin-left: 20px;
+
+
 }
+
 
 a.social {
     display: inline-block;
     text-indent: -9999px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-repeat: no-repeat;
     opacity: .8;
     transition: all .5s;
     text-decoration: none;
     padding: 11px;
-
+    
   }
 
-ul {
-  list-style: none;
-
-}
-
-.social li {
-  display: inline-block;
-  position: relative;
-  bottom: 35px;
-  padding: 10px;
-
-}
-
-
 .social li:hover {
-  transform: rotate(-40deg);
+  transform: rotate(-20deg);
 
 }
 
-a.twitter {
-  background-image: url(../imgs/twitter.svg);
+.social button {
+
+
+}*/
+
+
+
+/* Wrapper */
+.icon-button {
+  background-color: grey;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 2.6rem;
 }
-a.linkedin {
-  background-image: url(../imgs/linkedin.svg);
+
+/* Circle */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 0;
 }
-a.github {
-  background-image: url(../imgs/github.svg);
+.icon-button:hover span {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 2.6rem;
+  margin: -1.3rem;
 }
-a.social:hover {
-  opacity: .5;
+
+/* Icons */
+.icon-button i {
+  background: none;
+  color: black;
+  height: 2.6rem;
+  left: 0;
+  line-height: 2.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 2.6rem;
+  z-index: 10;
 }
 
 
+
+
+
+.twitter span {
+  background-color: #4099ff;
+}
+.facebook span {
+  background-color: #3B5998;
+}
+.google-plus span {
+  background-color: #db5a3c;
+}
+.tumblr span {
+  background-color: #34526f;
+}
+.instagram span {
+  background-color: #517fa4;
+}
+.youtube span {
+  background-color: #bb0000;
+}
+.pinterest span {
+  background-color: #cb2027;
+}
+
+
+
+.icon-button .icon-twitter {
+  color: #4099ff;
+}
+.icon-button .icon-facebook {
+  color: #3B5998;
+}
+.icon-button .fa-tumblr {
+  color: #34526f;
+}
+.icon-button .icon-google-plus {
+  color: #db5a3c;
+}
+.icon-button .fa-instagram {
+  color: #517fa4;
+}
+.icon-button .fa-youtube {
+  color: #bb0000;
+}
+.icon-button .fa-pinterest {
+  color: #cb2027;
+}
+
+
+
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .fa-tumblr,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+  color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+  body {
+
+    padding: 10px;
+  }
+  .pinterest {
+   display: none; 
+  }
+
+}
 
 
 
@@ -632,10 +734,10 @@ Overlay
 }
 
 #overlay p {
-color: white;
-width: 300px;
-margin: 0 auto;
-padding-top: 5px;
+  color: white;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 5px;
 
 }
 
@@ -654,8 +756,8 @@ padding-top: 5px;
 #overlay #btnPrev {
 
   position: absolute;
-   float: left;
-   top: 25%;
+  float: left;
+  top: 25%;
   left: 3%;
   font-size: 1.5em;
   background-color: rgba(0,0,0,0.0);
@@ -668,8 +770,8 @@ padding-top: 5px;
 #overlay #btnNext {
 
   position: absolute;
-   float: right;
-   top: 25%;
+  float: right;
+  top: 25%;
   right: 3%;
   font-size: 1.5em;
   background-color: rgba(0,0,0,0.0);
@@ -838,11 +940,6 @@ Gallery
     transition: height 0.3s linear;
   }
 
-  .navigator {
-    position: relative;
-    bottom: 120px;
-  }
- 
   .slide-down {
     height: 185px;
     background-color: rgba(0,0,0,0.4);
@@ -903,13 +1000,6 @@ Gallery
 
  ********************/
 
-.navigator li {
-
-  font-size: .8em;
-  margin-right: 15px;
-  padding-right: 2px;
-  
-}
 
 .galleryTitle{
   float: left;
@@ -1017,35 +1107,14 @@ EXHIBITIONS
 
 
     .quotation {
-    float: right;
-    margin-top: 50px;
-    margin-right: 100px;
-    width: 200px;
-    text-align: center;
-    font-size: 1em;
-}
-
-.red{  
-  /*  background-image: url("../img/NewCharlie2.jpg");
-    background-repeat:  no-repeat;   
-    height: 40%;
-    background-size: cover; */
-    float: right;
-    width: 40%; 
-    background-color: red;            
-}
-
-.green{
-
- width: 40%;
- float: left;
- background-color: green;  
-
-}
-
-
-
-}
+         float: right;
+        margin-top: 50px;
+        margin-right: 100px;
+        width: 200px;
+        text-align: center;
+        font-size: 1em;
+     }
+ }
 
 
 
@@ -1057,44 +1126,8 @@ EXHIBITIONS
    margin-top: 15px;
   }
 
-.red{  
-    float: right;
-    width: 40%; 
-    background-color: red;            
 }
 
-.green{
-
- width: 40%;
- float: left;
- background-color: green;  
-
-}
-
-}
-
-
-@media screen and (min-width: 1178px) {
-
-.red{  
-  /*  background-image: url("../img/NewCharlie2.jpg");
-    background-repeat:  no-repeat;   
-    height: 40%;
-    background-size: cover; */
-    float: right;
-    width: 40%; 
-    background-color: red;            
-}
-
-.green{
-
- width: 40%;
- float: left;
- background-color: green;  
-
-}
-
-}
 
 
 
