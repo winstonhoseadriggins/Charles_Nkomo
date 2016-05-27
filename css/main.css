@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: "Open Sans", sans-serif; 
-    background-color: gray;;
+    background-color: white;
     width: 100%;
     max-width: 1400px;
     height: auto;    
@@ -143,9 +143,12 @@ ul {
 nav {
  
   background-color: #f5f5f5;
-  margin-left: -10px;
-}
+  }
 
+.space {
+ margin-left: -10PX;
+
+}
 ul a {
   display: block;
   padding: 10px;
@@ -190,7 +193,7 @@ Home
 .container {  
     background-image: url("../img/NewCharlie2.jpg");
     background-repeat:  no-repeat;   
-    height: calc(100vh - 50px);
+    height: calc(100vh - 60px);
     background-position: center;
     background-size: cover;
     margin: 0 auto;
@@ -200,6 +203,21 @@ Home
 }
 
 #brand{
+    margin-top: 45px;
+    font-weight: bold;
+    color: #4b0082;
+    font-size: 2em;
+    font-family: 'Changa One', sans-serif; 
+    font-weight: normal;
+    text-shadow: 5px 8px 8px grey;
+    float: right;
+    position: relative;
+    left: 100px;
+    bottom: 88px;
+  
+}
+
+#brand1{
     margin-top: 45px;
     font-weight: bold;
     color: #4b0082;
@@ -257,6 +275,14 @@ font-weight: bold;
 .left {
   float: left;
   margin-left: 20px;
+}
+
+.futer .left2 {
+  text-align: center;
+  margin: auto;
+  font-size: 2em;
+  margin-left: 30px;
+  padding: 5px;
 }
 
 .right {
@@ -840,6 +866,30 @@ Remove Overlay Buttons Outline
 MEDIA QUIRIES
 ******************/
 
+
+
+
+@media screen and (max-width: 360px) {
+ 
+ #brand1 {
+  display: none;
+
+
+}
+
+.futer .left {
+  display: none;
+}
+
+}
+
+@media screen and (min-width: 361px) {
+.futer .left2 {
+  display: none;
+}
+
+}
+
 @media screen and (max-width: 400px) {
 
   .futer .right {
@@ -850,6 +900,9 @@ MEDIA QUIRIES
  } 
  
 }
+
+
+
 
 @media only screen and (max-width: 600px){
   .quotation {
@@ -970,7 +1023,17 @@ Gallery
 
 @media screen and (min-width: 765px) {
 
+    /******
 
+    HOME
+    ******/
+
+    .container {  
+    background-image: url("../img/NewCharlie2.jpg");
+    background-repeat:  no-repeat;   
+    height: calc(100vh - 50px);
+
+  }
    
    .quotation {
     float: right;
