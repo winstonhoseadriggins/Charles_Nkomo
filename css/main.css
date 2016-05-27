@@ -86,26 +86,24 @@ ANIMATE.CSS
 
 } 
 
+
 .nav{
- border: 0 auto;
+ margin: 0 auto;
+ background-color: red;
 
 }
 
-
-
-}
 
 .menu li {
-  margin-top: 25px;
+  margin-top: 0;
    display: block;
    padding:0;
-
   
 }
 
 .menu  a {
   text-decoration: none;
-  margin-top: 30;
+ 
  
 }
 
@@ -145,6 +143,7 @@ ul {
 nav {
  
   background-color: #f5f5f5;
+  margin-left: -10px;
 }
 
 ul a {
@@ -393,7 +392,6 @@ SOCIAL MEDIA ICONS
 /*** div ***/
 .social {
   padding: 10px;
-  margin-bottom: 15px auto;
   text-align: center;
   clear: both;
 } 
@@ -721,7 +719,7 @@ EXHIBITIONS
 
 .exhibitions {
   margin-left: 14px;
-  padding-top: -15px;
+ 
 }
 
 .group {
@@ -1083,6 +1081,7 @@ About
 .artgallery {
   float: left;
   width: 50%;
+  margin-left: 20px;
 }
 
 .happy {
@@ -1109,7 +1108,6 @@ About
 
 .social {
   padding: 10px;
-  margin-top: 100px auto;
   text-align: center;
   clear: both;
  
@@ -1128,7 +1126,7 @@ About
 
  .bio2 {
   float: right;
-  width: 55%;
+  width: 50%;
   margin-top: 120px;
   margin-right: 20px;
  }
