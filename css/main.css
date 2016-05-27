@@ -114,13 +114,10 @@ ANIMATE.CSS
 } 
 
 
-  menu a:hover {
+  .menu a:hover {
     color: brown;
   }
-
-  a:hover {
-     color: orange;
-}
+  
 
 /****************************
 Hamburger Menu
@@ -286,14 +283,15 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 
 **********************************/
 #aboutsection {      
-  background-image: url("../img/aboutbackground.png"); 
+  background-image: url("../img/aboutbackground.png");
+
 }
 
 .happy {
   color: brown;
   width: 50%;
   text-align: center;
-  margin: auto;
+  margin: -10px auto;
   font-size: 1em;
   font-family: 'kalam', sans-serif; 
 }
@@ -308,8 +306,8 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 
 .artgallery {
   height: 100%;
-  margin-top: 81px;
-  padding: 20px;
+  margin-top: 70px;
+  padding: 5px;
   margin-bottom: 0;
   overflow: hidden;
 
@@ -331,9 +329,7 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
   color: black;
 }
 
-.bio {
- 
-}
+
 
 .bio p {
   padding: 10px;
@@ -343,8 +339,9 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 
 .contact {
   font-weight: bold;
-  margin-left: 10px;
-
+  margin-left: 5px;
+ position: relative;
+ bottom: 10px;
 }
 
 .bio:first-line {
@@ -387,105 +384,6 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 
 }
 
-/***************************************
-GALLERY
-****************************************/
-
-.background {
-  border-bottom: 20px solid #4b0082;
-  height: auto;
-  
-  }
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.background {
-  background-color: #add8e6;
-}
-
-.interactive {
-  color: #4b0082;
-  font-size: .8em;
-  text-align: center;
-  margin-top: -40px;
-  margin-bottom: 10px;
-  font-weight: bold;
-
-}
-
-.inter{
-  color: black;
-  font-size: .8em;
-  text-align: center;
-  margin-bottom: -30px;
-}
-
-
-.field{
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width:100%;
-}
-
-.nature {
-  margin-left: 40px;
-  color: #696969;
-  font-family: 'kalam', sans-serif; 
-}
-
-.gallery {
-  max-width: 100%;
-  margin-top: 140px;
-}
-
-
-img:hover {
-transform:skewY(1.5deg);
-
-}
-
-.lightbox  {
-  list-style: none;
-  max-width: 980px;
-  padding: 10px;
-  margin: 10px auto;
-
-  
-}
-
- .lightbox img {
-    transition: transform .5s;
-    width: 70%;
-    height: 70%;
-    border: 3px solid white;
-    transition-property: box-shadow;
-    transition-duration:  .4s;
-    margin-bottom: 20px;
-    margin: 20px;
-
-    
-
- }
-
- .lightbox li {
-    margin-top: 50px;
-    border-radius: 10px;
-    background-color: rgba(0,0,0,0.1);     
-}
-  
-
-img:hover {
-  
-  box-shadow: 0 0 15px rgba(0,0, 0, .7);
- 
-
-}
-
 
 
 /**********************************
@@ -493,9 +391,11 @@ SOCIAL MEDIA ICONS
 ***********************************/
 
 /*** div ***/
-/*.social {
+.social {
   padding: 10px;
+  margin-bottom: 15px auto;
   text-align: center;
+  clear: both;
 } 
 
 
@@ -530,7 +430,7 @@ a.social {
 .social button {
 
 
-}*/
+}
 
 
 
@@ -686,26 +586,147 @@ a.social {
   }
 
 }
+/***************************************
+GALLERY
+****************************************/
+
+.background {
+  border-bottom: 20px solid #4b0082;
+  height: auto;
+  
+  }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.background {
+  background-color: #add8e6;
+}
+
+.interactive {
+  color: #4b0082;
+  font-size: .8em;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+}
+
+.inter{
+  color: black;
+  font-size: .8em;
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+
+.field{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width:100%;
+}
+
+.nature {
+  margin-left: 40px;
+  color: #696969;
+  font-family: 'kalam', sans-serif; 
+}
+
+.gallery {
+  max-width: 100%;
+  margin-top: 140px;
+}
+
+
+img:hover {
+transform:skewY(1.5deg);
+
+}
+
+.lightbox  {
+  list-style: none;
+  max-width: 980px;
+  padding: 10px;
+  margin: 10px auto;
+
+  
+}
+
+ .lightbox img {
+    transition: transform .5s;
+    width: 70%;
+    height: 70%;
+    border: 3px solid white;
+    transition-property: box-shadow;
+    transition-duration:  .4s;
+    margin-bottom: 20px;
+    margin: 20px;
+
+    
+
+ }
+
+ .lightbox li {
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.1);     
+}
+  
+
+img:hover {
+  
+  box-shadow: 0 0 15px rgba(0,0, 0, .7);
+ 
+
+}
+
+
 
 
 
 /********************
 EXHIBITIONS
 ********************/
-.img2 {
-  width: 80%;
-   height: 10%;
+.artgallery img {
+  width: 90%;
 }
 
 .bio2 {
+  height: auto;
+  margin: 10px;
+  border-radius: 5%;
+  border: 1px solid white;
+  font-size: 1em;
+
+}
+
+.list1 {
+  color: #000;
   font-size: .9em;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .fav {
   color: brown;
-  font-size: .8em;
+  font-size: .9em;
   text-align: center;
   font-family: 'Kalam', sans-serif;
+}
+
+.exhibitions {
+  margin-left: 14px;
+  padding-top: -15px;
+}
+
+.group {
+  padding-top: 15px;
+  margin-left:  14px;
 }
 /***********************
 Overlay
@@ -984,7 +1005,12 @@ Gallery
 
  .menu li:hover {
     transform: scale(1.2);
+  
 
+ }
+
+ .menu li:visited {
+  color: black;
  }
 
  .menu a {
@@ -1036,9 +1062,16 @@ Gallery
 
 }
 
+/***************************
 
-
-
+OVERLAY
+****************************/
+#overlay img {
+  max-height: 50vh;
+  max-width: 80%;
+  border: 2px solid  white;
+  margin-top: 10%;
+}
 
 
 /***************************
@@ -1046,9 +1079,6 @@ Gallery
 About
 ****************************/
 
-.about {
-  z-index: 0;
-}
 
 .artgallery {
   float: left;
@@ -1077,26 +1107,31 @@ About
 
 }
 
-/***************************
-
-EXHIBITIONS
-****************************/
-
-
-.red{  
-    float: right;
-    width: 40%; 
-    background-color: red;            
+.social {
+  padding: 10px;
+  margin-top: 100px auto;
+  text-align: center;
+  clear: both;
+ 
 }
+ 
+ /**************
 
-.green{
+  EXHIBITION
+ ****************/
 
- width: 40%;
- float: left;
- background-color: green;  
+ .artgallery {
+   float: left;
+   width: 40%;
+   margin-top: 100px
+ }
 
-}
-
+ .bio2 {
+  float: right;
+  width: 55%;
+  margin-top: 120px;
+  margin-right: 20px;
+ }
 
 }
 
@@ -1123,8 +1158,19 @@ EXHIBITIONS
 
 
   #brand2 {
-   margin-top: 15px;
+    margin-top: 15px;
   }
+
+  .social {
+      padding: 10px;
+      text-align: center;
+      clear: both;
+      padding-top: 40px;
+    }
+
+    .bio{
+      margin-top: 200px;
+    }
 
 }
 
