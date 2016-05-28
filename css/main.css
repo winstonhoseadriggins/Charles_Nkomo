@@ -369,6 +369,15 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
  bottom: 10px;
 }
 
+.contact a {
+  color: black;
+}
+
+.contact .icon {
+  color: orange;
+  padding-right: 10px;
+}
+
 .bio:first-line {
   font-weight: bold; 
   font-size: 1em;
