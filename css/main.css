@@ -363,15 +363,24 @@ ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
 
 
 .contact {
-  font-weight: bold;
-  margin-left: 5px;
- position: relative;
- bottom: 10px;
+    font-weight: bold;
+    margin-left: 5px;
+    position: relative;
+    bottom: 10px;
 }
 
 .contact a {
   color: black;
+  transition: transform 2s ease-out;
 }
+
+
+.bio a:hover {
+  color: red;
+  transform: scale (2.3);
+  
+}
+
 
 .contact .icon {
   color: orange;
@@ -1075,12 +1084,15 @@ Gallery
 
  .menu li:hover {
     transform: scale(1.2);
-  
-
  }
 
  .menu li:visited {
   color: black;
+ }
+ .contact1 li:hover{
+
+    transform: scale(1.2);
+
  }
 
  .menu a {
