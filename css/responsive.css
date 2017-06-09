@@ -1,0 +1,552 @@
+/***************************************
+MEDIA QUERIES
+****************************************/
+
+/***************************************
+HOME-PAGE
+****************************************/
+
+
+@media (max-width: 1930px) {
+    
+.nav  {
+   /* height: 120px;*/
+    background-color: green;
+    width: 100%; 
+    border-bottom: 2px solid green;
+  
+
+  }
+
+
+.nav ul {
+  padding-left: 7px;
+ 
+ 
+    }
+
+.container {
+  background-image: url("../images/charles3.jpg");
+  background-repeat:  no-repeat;
+  background-size: cover;
+  height: 930px;
+  width: 100%;
+  margin-bottom: 0;
+  
+}
+
+.container h2 {
+  font-size: 3em;
+}
+
+.container p {
+  font-size: 1.8em;
+}
+
+
+.footer {
+height: 95px;   
+margin-top: -20px;
+width: 100%;
+overflow: none;
+
+}
+
+ .all {
+  min-height: calc(100vh - 50px);
+
+}
+
+.footer p {
+ font-size: 1.3em;
+ padding-top: 20px;
+ position: relative;
+ bottom: 10px;
+}
+#overlay img {
+  width: 100%;
+  margin-top: 60%;
+
+
+}
+}
+
+
+@media (max-width: 1400px) {
+    
+.nav  {
+    /*height: 80px;*/
+    background-color: #7C949C;
+    width: 100%; 
+    border-bottom: 2px solid green;
+  
+
+  }
+
+
+.nav ul {
+  padding-left: 7px;
+ 
+ 
+    }
+
+.container {
+  height: 605.5px;
+  background-size: cover;
+  width: 100%;
+ /* overflow: hidden;*/
+
+  
+}
+
+.container h2 {
+  font-size: 2em;
+}
+
+.container p {
+  font-size: 1em;
+}
+
+.footer {
+height: 50px;   
+margin-top: 0;
+
+
+
+}
+
+.footer p {
+ font-size: 1em;
+ padding-top: 20px;
+ position: relative;
+ bottom: 10px;
+}
+#overlay img {
+  width: 100%;
+  margin-top: 60%;
+
+
+}
+}
+
+@media (max-width: 1200px) {
+
+ #wrapper {
+ background: white;
+ width: 100%;
+
+ } 
+.nav  {
+   /* height: 80px;*/
+    background-color: #7C949C;
+    width: 100%; 
+    border-bottom: 2px solid green;
+    
+
+  }
+
+
+  .social p {
+    float: right;
+    margin-right: 20px;
+    font-size: 1em;
+    font-weight: bold;
+
+  }
+
+.nav ul {
+  padding-left: 7px;
+
+ 
+    }
+
+
+.container {  
+    background-image: url("../images/charles3.jpg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+    height: 610px; 
+    margin-right:  0; 
+    padding: 0;
+    width: 100%; 
+   
+
+
+}
+  
+.container h2 {
+  font-size: 1.5em;
+  position: relative;
+  top: 30px;
+  color: black;
+  margin-right: 40px;
+  float: right;
+
+}
+
+.container p {
+  font-size: 1em;
+}
+
+.footer {
+height: 55px;   
+margin-top: 0;
+width: 100%;
+overflow: none;
+
+
+}
+
+.footer p {
+ font-size: .9em;
+ padding-top: 30px;
+ 
+}
+
+#overlay img {
+  width: 100%;
+  margin-top: 60%;
+
+
+}
+}
+
+/*******************************
+
+MEDIA QUERIES - MOBILE RESOLUTION
+**********************************/
+
+
+
+@media (max-width: 660px) {
+
+.nav  {
+    /*height: 80px;*/
+    background-color: #7C949C;
+    width: 100%; 
+    border-bottom: 2px solid green;
+    display: block;
+
+  }
+
+.nav ul {
+  padding-left: 7px;
+  display: block;
+ 
+    }
+
+    .nav ul li {
+
+      display: block;
+    }
+
+.social p {
+    font-size: .5em;
+    font-weight: bold;   
+    margin-left: 20px;
+    display: none;
+
+  }
+
+.container {  
+    background-image: url("../images/charlesCropped2.jpg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+    height: 438px; 
+    margin-right: 0;
+    padding: 0;
+    width: 100%; 
+    
+
+}
+  
+
+.container h2 {
+  font-size: 2.5em;
+
+}
+
+.container p {
+  font-size: 1.5em;
+}
+
+
+
+.footer {
+height: 50px;   
+margin-top: 0;
+width: 100%;
+
+}
+
+.footer p {
+ font-size: .8em;
+ 
+
+}
+
+#overlay img {
+  width: 100%;
+  margin-top: 60%;
+
+
+}
+
+}
+
+
+@media (max-width: 480px) {
+
+
+.nav  {
+ /*   height: 70px;*/
+    background-color: #7C949C;
+    width: 100%; 
+    border-bottom: 2px solid green;
+
+  }
+
+
+.nav ul {
+  padding-left: 7px;
+
+ 
+    }
+
+  .social p {
+    font-size: .5em;
+    font-weight: bold;
+    margin-left: 20px;
+
+  }
+
+.container {  
+    background-image: url("../images/charlesCropped2.jpg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+    height: 620px; 
+    padding: 0;
+    width: 100%; 
+    margin-top: 0;
+
+}
+  
+
+.container h2 {
+  font-size: 2em;
+  position: relative;
+  top: 30px;
+  color: black;
+  margin-right: 30px;
+  float: right;
+
+
+}
+
+.container p {
+  font-size: 1em;
+}
+
+.footer {
+ 
+   width: 100%;
+   height: 70px;
+   color: #7C949C;
+   overflow: none;
+
+ }
+
+
+
+.footer p {
+ font-size: .8em;
+ 
+ 
+}
+
+
+#overlay img {
+  width: 100%;
+  margin-top: 60%;
+
+
+}
+}
+
+@media (max-width: 320px) {
+
+
+.nav  {
+    /*height: 70px;
+*/    background-color: #7C949C;
+    width: 100%; 
+    border-bottom: 2px solid green;
+
+  }
+
+
+.nav ul {
+  padding-left: 7px;
+
+ 
+    }
+
+  .social p {
+  
+    font-size: .5em;
+    font-weight: bold;
+    margin-left: 20px;
+
+  }
+
+.container {  
+    background-image: url("../images/charlesCropped2.jpg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+    height: 447px; 
+    padding: 0;
+    width: 100%; 
+    margin-top: 0;
+
+}
+  
+
+.container h2 {
+  font-size: 2em;
+  position: relative;
+  top: 30px;
+  color: black;
+  margin-right: 30px;
+  float: right;
+
+
+}
+
+.container p {
+  font-size: 1em;
+}
+
+.footer {
+ 
+   width: 100%;
+   height: 70px;
+   color: #7C949C;
+   overflow: none;
+
+ }
+
+
+
+.footer p {
+ font-size: .8em;
+ 
+ 
+}
+
+
+#overlay img {
+  width: 100%;
+  margin-top: 60%;
+
+
+}
+}
+
+
+/*********
+iPAD
+***********/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
+ 
+ .nav {
+    background-color: #7C949C;
+    border-bottom: 1px solid blue;
+    /*height: 100px;*/
+  }
+
+  .nav ul {
+    padding-top: 20px;
+  }
+
+  .nav ul li a {
+     font-size: 1.5em;
+  }
+
+  .container {  
+    background-image: url("../images/charlesCropped2.jpg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+    height:890px; 
+    margin-right: 0;
+    padding: 0;
+    width: 100%;
+   
+
+}
+
+.container h2 {
+  font-size: 3em;
+}
+
+ .footer {
+  position: absolute;
+  bottom: 0;
+   width: 100%;
+   height: 150px;
+   color: #7C949C;
+
+ }
+
+  .footer p {
+   font-size: 1.1em;
+   padding-top:25px;
+
+ }
+
+/* .all {
+  min-height: calc(100vh - 100px);
+}*/
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+.nav {
+
+    background-color: #7C949C;
+    width: 100%;
+    /*height: 90px;*/
+  }
+
+.nav ul {
+    padding-top: 15px;
+  }
+
+ .container {  
+    background-image: url("../images/charles3.jpg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+    height:643px; 
+    margin-right: 0;
+    padding: 0;
+    width: 100%;
+   
+
+}
+
+
+}
+
+ .footer {
+   width: 100%;
+   height: 50px;
+   color: #7C949C;
+   overflow: hidden;
+
+
+ }
+}
+
+
+
+
